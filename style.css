@@ -1,0 +1,80 @@
+/* html {
+    cursor: none;
+} */
+
+@font-face {
+    font-family: 'openhuninn';
+    src: url('openhuninn.woff2') format('woff2');
+}
+
+body {
+    font-family: 'openhuninn';
+    user-select: none;
+    margin: 0;
+    /* background-color: #00ff00; */
+    background-color: black;
+}
+
+.box {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 350px;
+    background-color: #004d00;
+    transition: all .8s ease-in-out;
+}
+
+.box--in {
+    transform: translateX(-100%);
+}
+
+.box--out {
+    transform: translateX(100%);
+}
+
+.title {
+    font-size: 30px;
+    margin: 10px 0 10px 15px;
+    color: white;
+}
+
+.line {
+    border: 1px solid white;
+}
+
+.content {
+    margin: 10px 0 10px 20px;
+    color: white;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+
+/* debug */
+
+.btn-ctrl {
+    margin: 10px 0 10px 10px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 4px;
+    background-color: #361cac;
+    color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #261575;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
