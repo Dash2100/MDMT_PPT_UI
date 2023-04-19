@@ -11,8 +11,8 @@ body {
     font-family: 'openhuninn';
     user-select: none;
     margin: 0;
-    /* background-color: #00ff00; */
-    background-color: black;
+    background-color: #00ff00;
+    /* background-color: black; */
 }
 
 .box {
