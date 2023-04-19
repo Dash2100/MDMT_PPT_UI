@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'openhuninn';
-    src: url('openhuninn.woff2') format('woff2');
+    src: url('../font/openhuninn.woff2') format('woff2');
 }
 
 body {
@@ -16,20 +16,20 @@ body {
 }
 
 .box {
+    border: 2px solid white;
+    border-radius: 30px;
     position: fixed;
-    width: 100%;
-    bottom: 0;
+    width: 95%;
+    left: 50%;
+    bottom: 10px;
     height: 350px;
+    transform: translateX(-50%);
     background-color: #004d00;
-    transition: all .8s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 
-.box--in {
-    transform: translateX(-100%);
-}
-
-.box--out {
-    transform: translateX(100%);
+.box--hide {
+    bottom: -355px;
 }
 
 .title {
@@ -43,10 +43,31 @@ body {
 }
 
 .content {
+    position: absolute;
+    opacity: 0;
+    left: 30px;
     margin: 10px 0 10px 20px;
     color: white;
     font-size: 40px;
     line-height: 50px;
+    transition: all .3s ease-in-out;
+}
+
+.content--show {
+    opacity: 1;
+    left: 10px;
+}
+
+.content--hide {
+    opacity: 0;
+    left: -30px;
+}
+
+td {
+    padding-right: 20px !important;
+    max-width: 1550px;
+    padding: 0;
+    vertical-align: top;
 }
 
 
