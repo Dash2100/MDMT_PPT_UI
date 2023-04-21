@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'openhuninn';
+    src: url('../font/openhuninn.woff2') format('woff2');
+}
+
+body {
+    font-family: 'openhuninn';
+    user-select: none;
+    margin: 0;
+    background-color: black;
+}
+
+.output-ifrmae{
+    display: fixed;
+    border: none;
+    width: 1920px;
+    height: 1080px;
+    transform: scale(0.5);
+}
